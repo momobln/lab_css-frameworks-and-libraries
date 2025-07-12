@@ -1,4 +1,5 @@
 # lab_css-frameworks-and-libraries
+
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
 # LAB | Building with CSS Frameworks & Component Libraries
@@ -108,13 +109,13 @@ Next, configure Tailwind to scan your source files for classes by editing `tailw
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // This is the crucial line!
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}' // This is the crucial line!
   ],
   theme: {
-    extend: {},
+    extend: {}
   },
-  plugins: [],
+  plugins: []
 };
 ```
 
@@ -154,7 +155,7 @@ Use the following assets:
 <details>
   <summary><b>🏆 Click to see the solution for Iteration 1</b></summary>
 
-```typescript
+```jsx
 // src/App.tsx
 
 function App() {
@@ -168,26 +169,14 @@ function App() {
       <div className="max-w-sm bg-white rounded-xl shadow-lg overflow-hidden md:max-w-2xl">
         <div className="md:flex">
           <div className="md:shrink-0">
-            <img
-              className="h-48 w-full object-cover md:h-full md:w-48"
-              src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcdda9?q=80&w=2070"
-              alt="Modern running shoe"
-            />
+            <img className="h-48 w-full object-cover md:h-full md:w-48" src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcdda9?q=80&w=2070" alt="Modern running shoe" />
           </div>
           <div className="p-8">
-            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
-              Running Shoes
-            </div>
-            <a
-              href="#"
-              className="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
-            >
+            <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Running Shoes</div>
+            <a href="#" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">
               AeroStride Pro
             </a>
-            <p className="mt-2 text-slate-500">
-              Experience unparalleled comfort and performance. Perfect for both
-              road and trail.
-            </p>
+            <p className="mt-2 text-slate-500">Experience unparalleled comfort and performance. Perfect for both road and trail.</p>
             <div className="mt-4">
               <button className="px-4 py-2 bg-indigo-500 text-white text-sm font-medium rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 Add to Cart
@@ -231,10 +220,7 @@ Next, open `index.html` in your project root and add the Roboto font link inside
   <!-- ... other head elements -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-  />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
   <title>Vite + React + TS</title>
 </head>
 ```
@@ -257,15 +243,15 @@ Replace the content of `src/App.tsx` again. This time, your task is to build the
 <details>
   <summary><b>🏆 Click to see the solution for Iteration 2</b></summary>
 
-```typescript
+```jsx
 // src/App.tsx
 
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import CardActions from "@mui/material/CardActions";
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import CardActions from '@mui/material/CardActions';
 
 function App() {
   return (
@@ -276,19 +262,13 @@ function App() {
         The structure is defined by components like Card, CardContent, etc.
       */}
       <Card sx={{ maxWidth: 345, boxShadow: 3, borderRadius: 2 }}>
-        <CardMedia
-          component="img"
-          height="194"
-          image="https://images.unsplash.com/photo-1515955656352-a1fa3ffcdda9?q=80&w=2070"
-          alt="Modern running shoe"
-        />
+        <CardMedia component="img" height="194" image="https://images.unsplash.com/photo-1515955656352-a1fa3ffcdda9?q=80&w=2070" alt="Modern running shoe" />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             AeroStride Pro
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Experience unparalleled comfort and performance. Perfect for both
-            road and trail.
+            Experience unparalleled comfort and performance. Perfect for both road and trail.
           </Typography>
         </CardContent>
         <CardActions sx={{ padding: 2 }}>
@@ -330,12 +310,12 @@ For the final iteration, let's combine the strengths of both tools. We'll use Ta
 <details>
   <summary><b>🏆 Click to see the solution for Iteration 3</b></summary>
 
-```typescript
+```jsx
 // src/App.tsx
 
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
 
 function Navbar() {
   return (
@@ -350,22 +330,13 @@ function Navbar() {
           {/* Desktop Menu Links */}
           {/* 'hidden' by default, 'md:flex' makes it visible on medium screens and up */}
           <div className="hidden md:flex items-center space-x-4">
-            <a
-              href="#"
-              className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
-            >
+            <a href="#" className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">
               Features
             </a>
-            <a
-              href="#"
-              className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
-            >
+            <a href="#" className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">
               Pricing
             </a>
-            <a
-              href="#"
-              className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
-            >
+            <a href="#" className="text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">
               About
             </a>
             {/* MUI Button for Login */}
