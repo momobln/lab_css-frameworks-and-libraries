@@ -101,7 +101,10 @@ $ npm install -D tailwindcss postcss autoprefixer
 # Generate the tailwind.config.js and postcss.config.js files
 $ npx tailwindcss init -p
 ```
-
+If you get an error message as deprecated, check the latest docs from Tailwind: 
+- See https://github.com/tailwindlabs/tailwindcss/discussions/15820
+- and https://tailwindcss.com/docs/upgrade-guide#using-a-javascript-config-file
+- 
 Next, configure Tailwind to scan your source files for classes by editing `tailwind.config.js`:
 
 ```javascript
