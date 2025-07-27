@@ -142,7 +142,7 @@ Now, open `src/App.tsx` and delete the boilerplate content. Your task is to buil
 
 Use the following assets:
 
-- **Image URL**: `https://images.unsplash.com/photo-1515955656352-a1fa3ffcdda9?q=80&w=2070`
+- **Image URL**: `https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`
 - **Category**: `Running Shoes`
 - **Title**: `AeroStride Pro`
 - **Description**: `Experience unparalleled comfort and performance. Perfect for both road and trail.`
